@@ -23,9 +23,13 @@ jobs:
         run: npm ci
 
       - name: 🔐 Set up Sauce credentials
-        run: |
-          echo "SAUCE_USERNAME=${{ secrets.SAUCE_USERNAME }}" >> .env
-          echo "SAUCE_ACCESS_KEY=${{ secrets.SAUCE_ACCESS_KEY }}" >> .env
+        env:
+          SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
+          SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_ACCESS_KEY }}
+        run: echo "Sauce credentials set as environment variables"
 
       - name: 📤 Run Sauce Labs tests
         run: npx saucectl run
+        env:
+          SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
+          SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_ACCESS_KEY }}
