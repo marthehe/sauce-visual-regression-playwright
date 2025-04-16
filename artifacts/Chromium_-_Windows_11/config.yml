@@ -1,0 +1,41 @@
+apiVersion: v1alpha
+kind: playwright
+showConsoleLog: false
+sauce:
+  region: eu-central-1
+  concurrency: 1
+  sauceignore: .sauceignore
+playwright:
+  version: 1.49.1
+suites:
+  - name: Chromium - Windows 11
+    testMatch:
+      - (.*).spec.ts
+    platformName: Windows 11
+    params:
+      browserName: chromium
+      project: ""
+
+  - name: Firefox - Windows 11
+    testMatch:
+      - (.*).spec.ts
+    platformName: Windows 11
+    params:
+      browserName: firefox
+      project: ""
+
+  - name: WebKit - Windows 11
+    testMatch:
+      - (.*).spec.ts
+    platformName: Windows 11
+    params:
+      browserName: webkit
+      project: ""
+
+rootDir: .
+artifacts:
+  download:
+    match:
+      - "*"
+    when: always
+    directory: ./artifacts

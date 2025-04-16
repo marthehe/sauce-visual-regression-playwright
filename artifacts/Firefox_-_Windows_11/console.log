@@ -1,0 +1,11 @@
+Sauce Playwright Runner 2.36.0
+Running Playwright 1.49.1
+Preparing npm environment
+Finished
+
+Running 1 test using 1 worker
+
+  ok 1 [firefox] › login.spec.ts:3:5 › Login page visual regression (3.5s)
+
+  1 passed (7.8s)
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites name="Chromium - Windows 11" tests="1" failures="0" skipped="0" errors="0" time="1.718">
+    <testsuite name="login.spec.ts" timestamp="2025-04-16T13:11:54.783Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.718" errors="0" id="0">
+        <testcase name="Login page visual regression" classname="login.spec.ts" time="1.718">
+            <system-out><![CDATA[
+[[ATTACHMENT|test-results\login-Login-page-visual-regression-chromium\trace.zip]]
+]]></system-out>
+        </testcase>
+        <properties>
+            <property name="platformName" value="Windows 11"/>
+            <property name="browserName"/>
+        </properties>
+    </testsuite>
+</testsuites>

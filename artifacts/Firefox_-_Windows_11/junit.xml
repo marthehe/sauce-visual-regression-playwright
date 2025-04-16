@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites name="Firefox - Windows 11" tests="1" failures="0" skipped="0" errors="0" time="3.485">
+    <testsuite name="login.spec.ts" timestamp="2025-04-16T13:12:13.771Z" hostname="firefox" tests="1" failures="0" skipped="0" time="3.485" errors="0" id="0">
+        <testcase name="Login page visual regression" classname="login.spec.ts" time="3.485">
+            <system-out><![CDATA[
+[[ATTACHMENT|test-results\login-Login-page-visual-regression-firefox\trace.zip]]
+]]></system-out>
+        </testcase>
+        <properties>
+            <property name="platformName" value="Windows 11"/>
+            <property name="browserName"/>
+        </properties>
+    </testsuite>
+</testsuites>
