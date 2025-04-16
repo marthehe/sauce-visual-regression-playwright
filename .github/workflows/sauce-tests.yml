@@ -1,6 +1,7 @@
 name: 🧪 Cross-Browser Tests on Sauce Labs
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
   pull_request:
